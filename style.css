@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-title {
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-content {
+    height: 200px;
+    width: 500px;
+    margin: auto;
+}
+
+.about-content p {
+    font-size: 20px;
+    float: left;
+    width: 60%;
+}
+
+.about-content img {
+    height: 100%;
+}
+
+
+.contact-title {
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact-content {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+}
+
+.footer-content {
+    color: white;
+    height: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
