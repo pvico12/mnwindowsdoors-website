@@ -1,5 +1,8 @@
 body {
     background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -64,7 +67,9 @@ nav a {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: auto;
+    height: 40px;
+    width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: black;
