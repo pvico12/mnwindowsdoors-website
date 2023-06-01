@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(255, 255, 240);
+    background-color: rgb(231, 217, 205);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 nav {
-    background-color: rgb(110, 216, 126);
+    background-color: rgba(205, 192, 179, 0.619);
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 10px;
@@ -72,11 +72,11 @@ footer {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: black;
+    background-color: rgba(205, 192, 179, 0.619);
 }
 
 .footer-content {
-    color: white;
+    color: black;
     height: 20px;
     text-align: left;
     margin-left: 20px;
