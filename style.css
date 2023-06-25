@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(231, 217, 205);
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ nav a {
 
 .about-title {
     font-style: bold;
-    font-size: 30px;
+    font-size: 30px; 
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
