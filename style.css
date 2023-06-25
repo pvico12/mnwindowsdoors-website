@@ -29,14 +29,6 @@ nav a {
     padding-bottom: 20px;
 }
 
-.about-title {
-    font-style: bold;
-    font-size: 30px; 
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .about-content {
     height: 200px;
     width: 500px;
@@ -51,14 +43,6 @@ nav a {
 
 .about-content img {
     height: 100%;
-}
-
-
-.contact-title {
-    font-style: bold;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 50px;
 }
 
 .contact-content {
