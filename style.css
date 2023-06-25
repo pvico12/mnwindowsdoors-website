@@ -37,12 +37,25 @@ nav a {
 
 .about-content p {
     font-size: 20px;
-    float: left;
     width: 60%;
 }
 
-.about-content img {
-    height: 100%;
+.window-type-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.window-type-element {
+    padding: 10px;
+}
+
+.window-type-element img {
+    width: 150px;
+}
+
+.window-type-element p {
+    text-align: center;
 }
 
 .contact-content {
