@@ -1,0 +1,259 @@
+.hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 800px;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+  }
+}
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  .btn-secondary {
+    border-color: white;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: var(--primary-color);
+    }
+  }
+}
+
+.hero-phone {
+  font-size: 1.1rem;
+
+  span {
+    opacity: 0.8;
+  }
+
+  a {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--accent-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.about {
+  background-color: var(--bg-light);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text {
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+  }
+
+  p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .feature-icon {
+    color: var(--accent-color);
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+  }
+
+  p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+}
+
+.windows-preview {
+  background: white;
+}
+
+.windows-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.window-card {
+  background: var(--bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition);
+  padding: 20px;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .window-image {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+
+    img {
+      max-height: 120px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+.windows-cta {
+  text-align: center;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #dd6b20 100%);
+  padding: 80px 20px;
+}
+
+.cta-content {
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .btn-primary {
+    background-color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  .btn-secondary {
+    border-color: white;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .windows-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .windows-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}

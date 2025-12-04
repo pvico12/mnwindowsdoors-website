@@ -1,0 +1,98 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Quality Windows & Doors</h1>
+    <p class="hero-subtitle">Professional installation with 40 years of experience</p>
+    <div class="hero-cta">
+      <a routerLink="/contact" class="btn btn-primary">Get Free Estimate</a>
+      <a routerLink="/windows" class="btn btn-secondary">View Our Windows</a>
+    </div>
+    <div class="hero-phone">
+      <span>Call us today:</span>
+      <a href="tel:416-721-3658">416-721-3658</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Welcome to M&N Windows & Doors</h2>
+        <p>Hello, my name is Bob. I have been in the Windows and Doors business for almost 40 years! At M&N Windows and Doors, we take pride in delivering exceptional quality and service to every customer.</p>
+        <p>We specialize in replacing all kinds of Windows and Doors, ensuring your home is beautiful, energy-efficient, and secure. Our commitment to craftsmanship and customer satisfaction has made us a trusted name in the industry.</p>
+        <a routerLink="/services" class="btn btn-primary">Our Services</a>
+      </div>
+      <div class="about-features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>40+ Years Experience</h3>
+          <p>Decades of expertise in window and door installation</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>Quality Guaranteed</h3>
+          <p>Premium products and professional installation</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3>Free Estimates</h3>
+          <p>No obligation quotes for all your projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Windows Section -->
+<section class="section windows-preview">
+  <div class="container">
+    <h2 class="section-title">Types of Windows We Install</h2>
+    <p class="section-subtitle">We work with a wide variety of window styles to match your home's needs and aesthetic</p>
+
+    <div class="windows-grid">
+      @for (window of featuredWindows; track window.id) {
+        <div class="window-card">
+          <div class="window-image">
+            <img [src]="window.image" [alt]="window.name + ' Window'">
+          </div>
+          <h3>{{ window.name }}</h3>
+          <p>{{ window.description }}</p>
+        </div>
+      }
+    </div>
+
+    <div class="windows-cta">
+      <a routerLink="/windows" class="btn btn-primary">View All Window Types</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Home?</h2>
+      <p>Contact us today for a free estimate on your window and door replacement project</p>
+      <div class="cta-buttons">
+        <a href="tel:416-721-3658" class="btn btn-primary">Call 416-721-3658</a>
+        <a routerLink="/contact" class="btn btn-secondary">Request Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>

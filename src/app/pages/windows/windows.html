@@ -1,0 +1,40 @@
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <h1>Window Types</h1>
+    <p>Explore our wide selection of quality windows for every style and need</p>
+  </div>
+</section>
+
+<!-- Windows Gallery -->
+<section class="section windows-gallery">
+  <div class="container">
+    <div class="windows-grid">
+      @for (window of windowTypes; track window.id) {
+        <div class="window-card">
+          <div class="window-image">
+            <img [src]="window.image" [alt]="window.name + ' Window'">
+          </div>
+          <div class="window-info">
+            <h3>{{ window.name }}</h3>
+            <p>{{ window.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Need Help Choosing the Right Windows?</h2>
+      <p>Our experts can help you select the perfect windows for your home. Get a free consultation today!</p>
+      <div class="cta-buttons">
+        <a href="tel:416-721-3658" class="btn btn-primary">Call 416-721-3658</a>
+        <a routerLink="/contact" class="btn btn-secondary">Request Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,144 @@
+.page-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.windows-gallery {
+  background: var(--bg-light);
+}
+
+.windows-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.window-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .window-image {
+    background: var(--bg-light);
+    padding: 30px;
+    text-align: center;
+
+    img {
+      max-height: 150px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .window-info {
+    padding: 24px;
+
+    h3 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #dd6b20 100%);
+  padding: 80px 20px;
+}
+
+.cta-content {
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .btn-primary {
+    background-color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  .btn-secondary {
+    border-color: white;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .windows-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 60px 20px;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .windows-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="container">
+    <a routerLink="/" class="logo" (click)="closeMobileMenu()">
+      <span class="logo-text">M&N</span>
+      <span class="logo-subtext">Windows & Doors</span>
+    </a>
+
+    <button class="mobile-menu-btn" (click)="toggleMobileMenu()" [attr.aria-expanded]="mobileMenuOpen()">
+      <span class="hamburger" [class.active]="mobileMenuOpen()"></span>
+    </button>
+
+    <nav class="nav" [class.active]="mobileMenuOpen()">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Home</a>
+      <a routerLink="/windows" routerLinkActive="active" (click)="closeMobileMenu()">Windows</a>
+      <a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()">Services</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a>
+      <a routerLink="/contact" class="btn btn-primary nav-cta" (click)="closeMobileMenu()">Free Estimate</a>
+    </nav>
+  </div>
+</header>
